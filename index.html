@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cafe Delight - Home</title>
+    <title>Cafe Delight - Premium Coffee Experience</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -17,7 +18,9 @@
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -31,37 +34,148 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
-            <h1>Welcome to Cafe Delight</h1>
-            <p>Experience the finest coffee and cozy atmosphere in town.</p>
-            <button class="cta-button">Visit Us</button>
+            <h1>Experience Culinary Excellence</h1>
+            <p>Premium coffee, artisanal pastries, and an atmosphere that inspires</p>
+            <div class="hero-buttons">
+                <button class="cta-button">Explore Menu</button>
+                <button class="cta-button secondary">Book a Table</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="offers">
+        <div class="container">
+            <div class="offer-card">
+                <h3>Grand Opening Special</h3>
+                <p>20% off all coffee drinks this week only</p>
+                <span class="offer-code">Use code: WELCOME20</span>
+            </div>
         </div>
     </section>
 
     <!-- Menu Section -->
     <section id="menu" class="menu">
         <div class="container">
-            <h2>Our Menu</h2>
+            <h2>Our Premium Menu</h2>
+            <div class="menu-tabs">
+                <button class="tab-button active" data-category="all">All</button>
+                <button class="tab-button" data-category="coffee">Coffee</button>
+                <button class="tab-button" data-category="tea">Tea</button>
+                <button class="tab-button" data-category="pastries">Pastries</button>
+            </div>
             <div class="menu-grid">
-                <div class="menu-card">
+                <div class="menu-card" data-category="coffee">
                     <div class="menu-icon">
                         <i class="fas fa-coffee"></i>
                     </div>
                     <h3>Espresso</h3>
                     <p>Rich and bold espresso made from freshly ground beans.</p>
+                    <div class="price">$3.50</div>
                 </div>
-                <div class="menu-card">
+                <div class="menu-card" data-category="coffee">
                     <div class="menu-icon">
                         <i class="fas fa-mug-hot"></i>
                     </div>
                     <h3>Cappuccino</h3>
                     <p>Creamy cappuccino with perfectly steamed milk and foam.</p>
+                    <div class="price">$4.75</div>
                 </div>
-                <div class="menu-card">
+                <div class="menu-card" data-category="pastries">
                     <div class="menu-icon">
                         <i class="fas fa-cookie-bite"></i>
                     </div>
-                    <h3>Fresh Pastries</h3>
-                    <p>Delicious pastries baked fresh daily to complement your coffee.</p>
+                    <h3>Fresh Croissants</h3>
+                    <p>Buttery, flaky croissants baked fresh daily.</p>
+                    <div class="price">$2.95</div>
+                </div>
+                <div class="menu-card" data-category="tea">
+                    <div class="menu-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Earl Grey</h3>
+                    <p>Classic black tea with bergamot essence.</p>
+                    <div class="price">$3.25</div>
+                </div>
+                <div class="menu-card" data-category="coffee">
+                    <div class="menu-icon">
+                        <i class="fas fa-blender"></i>
+                    </div>
+                    <h3>Specialty Latte</h3>
+                    <p>Espresso with steamed milk and flavored syrup.</p>
+                    <div class="price">$5.25</div>
+                </div>
+                <div class="menu-card" data-category="pastries">
+                    <div class="menu-icon">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <h3>Artisan Bread</h3>
+                    <p>House-made sourdough with herbs.</p>
+                    <div class="price">$4.50</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Coffee Art">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Cafe Interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pastry">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Coffee Bar">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Coffee Beans">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Cafe Exterior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The best coffee I've ever had! The atmosphere is perfect for both work and relaxation. The staff is incredibly friendly and knowledgeable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I've traveled the world and tasted coffee everywhere, but Cafe Delight stands out. Their single-origin beans are exceptional."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Coffee Connoisseur</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,9 +185,45 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About Cafe Delight</h2>
-            <p>
-                Cafe Delight is a cozy neighborhood cafe dedicated to serving the best coffee and treats. Our passion for quality and community makes us the perfect spot to relax, work, or catch up with friends.
-            </p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Founded in 2015, Cafe Delight has been dedicated to serving the finest coffee and artisanal pastries in an atmosphere that inspires. Our master roasters source only the highest quality beans from sustainable farms around the world.
+                    </p>
+                    <p>
+                        Every cup is crafted with precision and passion, ensuring that each visit is a memorable experience. Our cozy yet sophisticated space is perfect for business meetings, casual get-togethers, or quiet moments of reflection.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>500+</h3>
+                            <p>Happy Customers Daily</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>15</h3>
+                            <p>Awards Won</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>8</h3>
+                            <p>Years of Excellence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1554224154-5a03a5c6f8f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Cafe Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <h2>Join Our Coffee Club</h2>
+            <p>Subscribe to our newsletter for exclusive offers and coffee tips</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </div>
     </section>
 
@@ -89,6 +239,13 @@
                         <p><i class="fas fa-map-marker-alt"></i> 456 Coffee Lane, Cityville</p>
                         <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
                         <p><i class="fas fa-envelope"></i> contact@cafedelight.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 7am-8pm, Sat-Sun: 8am-9pm</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-yelp"></i></a>
                     </div>
                 </div>
                 <form class="contact-form">
@@ -97,6 +254,9 @@
                     </div>
                     <div class="form-group">
                         <input type="email" id="email" name="email" placeholder="Your Email" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone (Optional)" />
                     </div>
                     <div class="form-group">
                         <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
@@ -111,21 +271,42 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>Cafe Delight</h3>
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Cafe Delight</h3>
+                    </div>
+                    <p>Premium coffee experiences since 2015</p>
                 </div>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="footer-info">
-                    <p>&copy; 2023 Cafe Delight. All rights reserved.</p>
+                <div class="footer-section">
+                    <h4>Opening Hours</h4>
+                    <p>Mon-Fri: 7am-8pm</p>
+                    <p>Sat-Sun: 8am-9pm</p>
                 </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 456 Coffee Lane</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Cafe Delight. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
